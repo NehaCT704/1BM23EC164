@@ -6,9 +6,8 @@
 // Project     : SystemVerilog and Verification (23EC6PE2SV),
 //               Faculty: Prof. Ajaykumar Devarapalli
 //
-// Description : 2:1 multiplexer designed and verified to demonstrate basic 
-//               functional coverage by observing output behavior for 
-                 different select line conditions.
+// Description : 2:1 multiplexer designed demonstrate basic 
+//               functional coverage.
 // ----------------------------------------------------------------------------------
 
 module mux2to1 (
