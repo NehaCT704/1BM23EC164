@@ -1,0 +1,35 @@
+// ----------------------------------------------------------------------------------
+// File        : Alu.sv
+// Author      : Neha C T / 1BM23EC164
+// Created     : 2026-02-04
+// Module      : alu
+// Project     : SystemVerilog and Verification (23EC6PE2SV),
+//               Faculty: Prof. Ajaykumar Devarapalli
+//
+// Description : ALU designed demonstrate basic 
+//               functional coverage.
+// ----------------------------------------------------------------------------------
+typedef enum logic [1:0] {
+  ADD,
+  SUB,
+  MUL,
+  XOR
+} opcode_t;
+module alu (
+  input  logic [7:0] a,
+  input  logic [7:0] b,
+  input  opcode_t    op,
+  output logic [15:0] y
+);
+
+  always_comb begin
+    case (op)
+      ADD: y = a + b;
+      SUB: y = a - b;
+      MUL: y = a * b;
+      XOR: y = a ^ b;
+      default: y = '0;
+    endcase
+  end
+
+endmodule
