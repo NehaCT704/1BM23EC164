@@ -2,7 +2,7 @@
 // File        : test.sv
 // Author      : Neha C T / 1BM23EC164
 // Created     : 2026-02-07
-// Module      : tb_mux2to1
+// Module      : test
 // Project     : SystemVerilog and Verification (23EC6PE2SV),
 //               Faculty: Prof. Ajaykumar Devarapalli
 //
