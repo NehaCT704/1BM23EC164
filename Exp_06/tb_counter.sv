@@ -31,7 +31,7 @@ module tb_counter;
 
     initial begin
         $dumpfile("counter.vcd");
-        $dumpvars(0, tb);
+        $dumpvars(0, tb_counter);
 
         rst = 1;
         #20 rst = 0;
