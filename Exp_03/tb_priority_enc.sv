@@ -30,7 +30,7 @@ module tb_priority_enc;
 
     initial begin
         $dumpfile("priorityenc.vcd"); // waveform file
-      $dumpvars(0, tb);             // dump all tb + dut signals
+        $dumpvars(0, tb_priority_enc);             // dump all tb + dut signals
 
         repeat (50) begin
             in = $urandom_range(0,15);
