@@ -24,7 +24,7 @@ cg_and cg = new();
 
 initial begin
   $dumpfile("andgate.vcd");   // dump file
-  $dumpvars(0, tb);           // dump all vars under tb
+  $dumpvars(0, tb_and_gate);           // dump all vars under tb
 
   repeat(20) begin
     a = $urandom();
