@@ -43,7 +43,7 @@ module tb_siso;
 
     initial begin
         $dumpfile("siso.vcd");
-        $dumpvars(0, tb);
+        $dumpvars(0, tb_siso);
 
         // Reset
         rst = 1;
