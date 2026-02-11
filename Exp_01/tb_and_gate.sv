@@ -6,7 +6,7 @@
 // Project     : SystemVerilog and Verification (23EC6PE2SV),
 //               Faculty: Prof. Ajaykumar Devarapalli
 //
-// Description : Simple testbench for and_gate.Randomizes inputs and uses a 
+// Description : Simple testbench for and gate.Randomizes inputs and uses a 
 //               covergroup to measureinput combination coverage.
 // ---------------------------------------------------------------------------------
 module tb_and_gate;
