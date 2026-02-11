@@ -23,7 +23,7 @@ module tb_alu;
 
     initial begin
         $dumpfile("alu.vcd");   // waveform file
-        $dumpvars(0, tb);       // dump tb + dut signals
+        $dumpvars(0, tb_alu);       // dump tb + dut signals
 
         repeat (50) begin
             a  = $urandom();
