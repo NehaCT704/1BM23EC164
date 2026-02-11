@@ -40,7 +40,7 @@ module tb_dff;
     initial begin
         // ---- WAVEFORM DUMP ----
         $dumpfile("dff.vcd");
-        $dumpvars(0, tb);
+        $dumpvars(0, tb_dff);
 
         repeat (100) begin
             pkt.randomize();
