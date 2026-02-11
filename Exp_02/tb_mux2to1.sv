@@ -36,7 +36,7 @@ module tb_mux2to1;
     initial begin
         // Waveform dump
         $dumpfile("mux_wave.vcd");
-        $dumpvars(0, tb);
+        $dumpvars(0, tb_mux2to1);
 
         repeat (20) begin
             // Random stimulus
