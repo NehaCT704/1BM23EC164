@@ -1,0 +1,4 @@
+imc: *W,user_attr.import_by_path_not_supported: Import User Defined Attribute by VMANAGER_PATH is not supported. Please use Profile editor in order to import new user attributes.
+IMC(64): 15.20-s069: (c) Copyright 1995-2019 Cadence Design Systems Inc - Coverage engine version: 15.20-s069
+Starting gui mode
+imc: *I,RUNLD: Successfully loaded run /home/student/cadWorkDir/myProjects/Digital/1BM23EC164/AAT2/cov_work/scope/test.

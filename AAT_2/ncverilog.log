@@ -1,0 +1,72 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Feb 24, 2026 at 13:29:11 IST
+ncverilog
+	+access+r
+	+sv
+	+nccoverage+all
+	-covoverwrite
+	digital_clock.sv
+	clock_interface.sv
+	clock_tb.sv
+	clock_test.sv
+Recompiling... reason: file './clock_tb.sv' is newer than expected.
+	expected: Tue Feb 24 13:01:37 2026
+	actual:   Tue Feb 24 13:28:56 2026
+file: clock_tb.sv
+	module worklib.clock_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.digital_clock
+		worklib.clock_test
+		worklib.clock_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.clock_tb:sv <0x430382b5>
+			streams:   6, words:  2621
+	Building instance specific data structures.
+ncelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+ncelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:                2       2
+		Interfaces:             1       1
+		Programs:               1       1
+		Registers:             12      12
+		Scalar wires:           2       -
+		Vectored wires:         4       -
+		Always blocks:          7       7
+		Initial blocks:         5       5
+		Pseudo assignments:     4       4
+		Assertions:             2       2
+		Covergroup Instances:   0       1
+	Writing initial simulation snapshot: worklib.clock_tb:sv
+Loading snapshot worklib.clock_tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /opt/cadence/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Coverage completed
+Simulation complete via $finish(1) at time 180495 NS + 5
+./clock_test.sv:74     $finish;
+ncsim> exit
+ncsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+ncsim: *W,CGDEFN: Default name "clock_tb.test.cov" will be generated for covergroup instance "cov" as the name of the covergroup instance is not specified explicitly: ./clock_test.sv, 34.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  clock_tb(clock_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_30384a3f_68ca010d.ucm
+  data               :  ./cov_work/scope/test/icc_30384a3f_68ca010d.ucd
+TOOL:	ncverilog	15.20-s086: Exiting on Feb 24, 2026 at 13:29:13 IST  (total: 00:00:02)
