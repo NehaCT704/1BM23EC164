@@ -1,3 +1,14 @@
+// ----------------------------------------------------------------------------------
+// File        : Digital_Clock.sv
+// Author      : Neha C T / 1BM23EC164
+// Created     : 2026-02-26
+// Module      : digital_clock
+// Project     : SystemVerilog and Verification (23EC6PE2SV),
+//               Faculty: Prof. Ajaykumar Devarapalli
+//
+// Description : Digital Clock designed demonstrate basic 
+//               functional coverage.
+// ----------------------------------------------------------------------------------
 module digital_clock (
     input  logic clk,
     input  logic reset,           // synchronous active-high reset
