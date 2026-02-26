@@ -1,3 +1,15 @@
+// ----------------------------------------------------------------------------------
+// File        : Clock_tb.sv
+// Author      : Neha C T / 1BM23EC164
+// Created     : 2026-02-26
+// Module      : clock_tb
+// Project     : SystemVerilog and Verification (23EC6PE2SV),
+//               Faculty: Prof. Ajaykumar Devarapalli
+//
+// Description : Digital Clock tb designed to generate clock and display the 
+//               waveform
+//               
+// ----------------------------------------------------------------------------------
 module clock_tb;
 clock_if intf();
 
