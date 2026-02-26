@@ -1,3 +1,14 @@
+// ----------------------------------------------------------------------------------
+// File        : clock_test.sv
+// Author      : Neha C T / 1BM23EC164
+// Created     : 2026-02-26
+// Module      : clock_test
+// Project     : SystemVerilog and Verification (23EC6PE2SV),
+//               Faculty: Prof. Ajaykumar Devarapalli
+//
+// Description : Digital Clock test designed to verify functional coverage and to  
+//               assign assertion.
+// ----------------------------------------------------------------------------------
 program clock_test(clock_if.TB intf);
 
 // FUNCTIONAL COVERAGE (sample only when reset inactive)
